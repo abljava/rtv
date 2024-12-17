@@ -40,7 +40,7 @@ export default function Page({params}) {
                                         return(
                                             <Link href = {`/routes/ourworks/${item.id}`}>
                                                 <div className = {`${localstyles.w100} ${localstyles.workBlock}`}>
-                                                    <Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`} alt = {item.attributes.title} fill />
+                                                    <Image unoptimized src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`} alt = {item.attributes.title} fill />
                                                     <p>{item.attributes.createdAt.split('T')[0]}</p>
                                                     <h2>{item.attributes?.title}</h2>
                                                     <p>{item.attributes.text}</p>
@@ -69,7 +69,7 @@ export default function Page({params}) {
                                         return(
                                             <Link href = {`/routes/ourworks/${item.id}`}>
                                                 <div className = {`${localstyles.w100} ${localstyles.workBlock}`}>
-                                                    <Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`} alt = {item.attributes.title} fill />
+                                                    <Image unoptimized src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`} alt = {item.attributes.title} fill />
                                                     <p>{item.attributes.createdAt.split('T')[0]}</p>
                                                     <h2>{item.attributes?.title}</h2>
                                                     <p>{item.attributes.text}</p>

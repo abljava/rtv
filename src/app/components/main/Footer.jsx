@@ -33,7 +33,7 @@ export const Footer = ({}) => {
                           : (data)
                           ?
                                 <>
-                                    <Image src= {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${data.data.attributes.footerLogo.data.attributes.url}`} alt={data.data.attributes.footerLogo.data.attributes.alt} fill />
+                                    <Image unoptimized  src= {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${data.data.attributes.footerLogo.data.attributes.url}`} alt={data.data.attributes.footerLogo.data.attributes.alt} fill />
                                 </>
                           : <h3>Ошибка...Компонент: Footer</h3>
             }

@@ -6,7 +6,7 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     images: {
-        domains: ['89.104.69.154','localhost', '127.0.0.1', 'mcbfe.ru', 'mcbfe.ru:1338','mcbfe.ru:1337'], // замените это значение на ваш домен или IP-адрес изображений
+        domains: ['95.163.229.107','localhost', '127.0.0.1', 'realtransvostok.ru', 'realtransvostok.ru:1338','realtransvostok.ru:1337'], // замените это значение на ваш домен или IP-адрес изображений
     },
     async headers() {
         return [
@@ -33,7 +33,7 @@ const nextConfig = {
         return [
             {
                 source: '/api/:path*',
-                destination: 'https://mcbfe.ru/path*',
+                destination: 'https://realtransvostok.ru/path*',
             },
         ]
     },

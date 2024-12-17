@@ -267,7 +267,7 @@ export const HeaderPluses = ({lang = 'ru'}) => {
                                         <div key = {`key_pluses_${index}`} className = {`${styles.topRows}`}>
                                             <h3>{item.attributes.title}</h3>
                                             <p>{item.attributes.text}</p>
-                                            <Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${(typeof item.attributes.icon.data.attributes.url == 'string') ? item.attributes.icon.data.attributes.url : ''}`} fill />
+                                            <Image unoptimized  src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${(typeof item.attributes.icon.data.attributes.url == 'string') ? item.attributes.icon.data.attributes.url : ''}`} fill />
                                         </div>
                                     )
                                 })
@@ -289,7 +289,7 @@ export const HeaderPluses = ({lang = 'ru'}) => {
                                         <div className = {`${styles.topRows}`}>
                                             <h3>{item.attributes.title}</h3>
                                             <p>{item.attributes.text}</p>
-                                            <Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${(typeof item.attributes.icon.data.attributes.url == 'string') ? item.attributes.icon.data.attributes.url : ''}`} fill />
+                                            <Image unoptimized   src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${(typeof item.attributes.icon.data.attributes.url == 'string') ? item.attributes.icon.data.attributes.url : ''}`} fill />
                                         </div>
                                     )
                                 })

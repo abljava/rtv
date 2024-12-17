@@ -87,24 +87,30 @@
 .headerIconRow {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
   width: 56% !important;
-  margin: auto;
+  grid-gap: 5%;
   gap: 5%;
-  margin-top: 40px;
-  margin-bottom: 2%;
-  transform: translateX(-8%);
+  margin: 40px auto 2%;
+    margin-right: auto;
+    margin-left: auto;
+  transform: translateX(0);
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 .topRows {
   display: grid;
-  grid-template-columns: 100%;
-  background: rgba(255, 255, 255, 0.19);
+  grid-template-columns: 66% 34%;
+  background: hsla(0,0%,100%,.19);
+  -webkit-backdrop-filter: blur(12.5px);
   backdrop-filter: blur(12.5px);
   border-radius: 10px;
   padding: 10px 20px 10px 40px;
   overflow: visible;
+  grid-template-rows: 49px auto;
 }
 .topRows * {
+  min-width: 100%;
 }
 .topRows h3 {
   color: #292929;
@@ -122,13 +128,15 @@
   font-size: clamp(10px,1vw,14px);
 }
 .topRows img {
-  position: absolute !important;
+  position: relative !important;
   width: max-content !important;
-  height: clamp(20px, 6vw, 100px) !important;
+  height: clamp(20px,6vw,100px) !important;
   object-fit: contain;
-  transform: translate(170%, 15%);
   margin-left: 10px;
-
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 .backVideo {
   position: absolute;
@@ -267,7 +275,7 @@
   background-color: #fff;
   padding: 10px;
   border-radius: 6px;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 .dropMenu2lvlContainer * {
   color: #292929;
@@ -509,14 +517,14 @@
     .nav {
       display: none;
     }
-  .langContainer span {
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0) !important;
-    border-radius: 6px;
-    margin-top: -20px;
-  }
+   .langContainer span {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0) !important;
+      border-radius: 6px;
+      margin-top: -20px;
+   }
    .langContainer button {
      width: 60px !important;
     }
@@ -606,15 +614,16 @@
     }
     .headerIconRow {
       display: grid;
-      grid-template-columns: 47% 47%;
+      grid-template-columns: 100%;
       width: 94% !important;
       flex-wrap: wrap;
-      margin: auto !important;
       transform: translateX(0);
       order: 3;
       margin-top: 0;
-      margin-bottom: 30px !important;
+      margin: auto auto 30px !important;
+      grid-gap: 6%;
       gap: 6%;
+      grid-auto-flow: row;
     }
     .headerIconRow > * {
       padding: 0 !important;
@@ -852,8 +861,9 @@
     font-family: Inter;
     font-size: clamp(50px,4vw,20px);
     font-style: normal;
-    font-weight: 600;
-    margin-left: 10%;
+    font-weight: 800;
+    margin-left: 0;
+    width: 100%;
     text-align: center;
   }
 }
@@ -880,8 +890,8 @@
     width: 94px;
     margin-left: auto;
     height: 90px;
-    margin-left: 19%;
-    margin-right: -6%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .burgerContainerIcon {
     display: flex;
@@ -1056,16 +1066,33 @@
   .topRows h3 {
     color: #292929;
     font-family: Inter;
-    font-size: clamp(50px, 4vw, 20px);
+    font-size: clamp(50px,4vw,20px);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     margin-left: 0;
     width: 100%;
+    text-align: center;
   }
-
+  .burgerContainer nav > a {
+    font-weight: bold;
+    font-size: 5vw !important;
+  }
+  .burgerContainer .dropMenu2lvlContainer * {
+    font-weight: 400 !important;
+  }
+  .headerContainer > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 110px;
+    width: 93%;
+    margin: auto;
+    justify-content: space-between;
+  }
   .topRows:last-child {
     margin-bottom: 50px;
   }
+
   .burgerIcon.whiteSpan span {
     background-color: #fff !important;
   }

@@ -10,6 +10,7 @@ import {ReduxWrapper} from "@/app/ReduxWrapper"
 //Components
 import {Header} from  "@/app/components/main/Header"
 import {Footer} from "@/app/components/main/Footer"
+import YandexMetrika from './YandexMetrika';
 
 export default function RootLayout({ children }) {
   return (
@@ -19,6 +20,16 @@ export default function RootLayout({ children }) {
            <title>RTV</title>
            <meta name="viewport" content="width=device-width, initial-scale"/>
            <meta name="description" content="Морское грузовое бюро предлагает профессиональные услуги по организации морских перевозок. Наши специалисты помогут вам с логистикой, таможенным оформлением и выбором оптимальных маршрутов. Доверьте нам свои грузы и надежно создайте и эффективное решение для вашего бизнеса." />
+           
+            <YandexMetrika 
+                yid={97841668}
+                clickmap={true}
+                trackLinks={true}
+                accurateTrackBounce={true}
+                webvisor={true}
+            />    
+            
+            
        </head>
         <body className={inter.className}>
         <Header />

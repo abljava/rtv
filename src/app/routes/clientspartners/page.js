@@ -78,7 +78,9 @@ const Clients = ({title = '', text = ''}) => {
                         data.data.map( (item, index) => {
                             return(
                                 <div className = {`${localstyles.proxyImage}`}>
-                                    <Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.logo.data.attributes.url}`} alt = {title} fill />
+                                        <picture>
+                                            <img unoptimized  src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.logo.data.attributes.url}`} alt = {title} />
+                                        </picture>
                                 </div>
                             )
                         })
@@ -118,7 +120,7 @@ const Partners = ({title = '', text = ''}) => {
                             data.data.map( (item, index) => {
                                 return(
                                     <div className = {`${localstyles.proxyImage}`}>
-                                        <Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.logo.data[0].attributes.url}`} alt = {title} fill />
+                                        <Image unoptimized src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.logo.data[0].attributes.url}`} alt = {title} fill />
                                       </div>
                                 )
                             })

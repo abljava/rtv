@@ -13,6 +13,7 @@ import { Loader } from '@/app/components/micro/Loader'
 
 import main_styles from '@/app/css/main.module.css'
 import styles from '@/app/css/header.module.css'
+import {useRouter} from "next/navigation";
 
 
 const langs = [
@@ -32,6 +33,8 @@ const LangSwitcher = ({}) => {
     const {setLang} = useActions()
     const {lang, mobile} = useMain()
 
+    const router = useRouter()
+
     return(
         <div className = {`${styles.langContainer}`}>
             {
@@ -43,10 +46,14 @@ const LangSwitcher = ({}) => {
                     }}
                     key = {`key_switcherLang_${index}`}
                     onClick = {() => {
-                        if(!mobile) setLang(item.type)
+                        if(!mobile) {
+                            setLang(item.type)
+                            router.push('/')
+                        }
                     }}
                     onTouchStart = {() => {
                         setLang(item.type)
+                        router.push('/')
                     }}>{item.name}
                 </button>{(!index) ? <span>/</span>: null}</>
                 )

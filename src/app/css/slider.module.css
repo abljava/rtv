@@ -145,14 +145,17 @@
     }
     .textSlider {
         margin-left: 5%;
-        margin-top: 10%;
+        margin-top: auto;
         width: 91%;
+        margin-bottom: auto;
     }
     .sliderItem h2 {
-        font-size: 6.3vw;
+        font-size: 8.3vw;
         font-weight: bold;
+        margin: auto;
         text-align: left;
     }
+
     .sliderItem p {
         font-size: clamp(12px, 4.3vw, 16px);
         font-weight: thin;

@@ -96,6 +96,12 @@
         cursor: pointer;
         z-index: 9999;
     }
+    .downBlock div:first-child h2 {
+        text-transform: uppercase;
+        font-size: clamp(21px,9.2vw,40px);
+        width: 100%;
+        margin-top: 20px;
+    }
     .downBlock div:first-child {
         width: clamp(350px, 100%, 450px);
     }
@@ -113,6 +119,26 @@
         min-height: 518px;
         transform: translate(-3%, 0);
         padding-top: 23px;
+    }
+    .downBlock div button {
+        width: 100%;
+        margin-top: 20px;
+        font-family: Inter;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 6px;
+        padding: 5% 3% !important;
+        border: none;
+        height: 55px !important;
+        cursor: pointer;
+        transition: all .3s;
+        font-size: clamp(14px,.8vw,18px) !important;
+        background: linear-gradient(343deg,#ff6006,#ffa800) !important;
+        width: 93% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .downBlock {
         width: 90%;

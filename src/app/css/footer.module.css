@@ -120,10 +120,8 @@
   top: -6% !important;
 }
 .footerBlock:nth-child(3) a[href^="tel:"] {
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 25px;
-  color: var(--services-gray);
+  font-size: clamp(16px, 1.7vw, 25px);
 }
 .footerBlock:nth-child(4) > *:first-child {
   margin-left: 12%;
@@ -196,7 +194,21 @@
   position: relative !important;
   object-fit: contain;
 }
-
+@media screen and (max-width: 1550px) {
+  .footerNav {
+    padding: 0 2%;
+    justify-content: space-between;
+    width: 57% !important;
+    margin: -15% auto auto 16%;
+  }
+  .footerBlock:first-child img {
+    height: 50% !important;
+    object-fit: contain !important;
+    position: relative !important;
+    width: auto !important;
+    margin-right: 3%;
+  }
+}
 @media screen and (max-width: 798px) {
   .footerNav {
     display: flex !important;
@@ -228,6 +240,7 @@
     grid-auto-rows: auto;
     grid-auto-flow: dense;
     max-height: max-content;
+    width: 100svw !important;
   }
   .nav :not(:first-child) {
     margin-left: 2%;

@@ -32,7 +32,10 @@ const Office =  ({data = {}, selectType = 0}) => {
         ru: 'Адресс',
         en: 'Address',
     }
-
+    const howLang = {
+        'ru': `Скоро откроется`,
+        'en': 'Opening soon'
+    }
 
     return(
         <section className = {`${styles.officeContainer} ${main_styles.container}`}>
@@ -41,7 +44,7 @@ const Office =  ({data = {}, selectType = 0}) => {
                     <div className={`${styles.rowContacts}`}>
                         <div><h4>{filiasLang[lang]}</h4><h4>{addressLang[lang]}</h4></div>
                         {
-                            data.map( (item, index) => <div><h4>{item.attributes.city}</h4><p>{(item.attributes.address) ? item.attributes.address : `Скоро откроется`}</p></div>)
+                            data.map( (item, index) => <div><h4>{item.attributes.city}</h4><p>{(item.attributes.address) ? item.attributes.address : howLang[lang]}</p></div>)
                         }
                     </div>
                               :

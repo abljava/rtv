@@ -14,6 +14,16 @@
     right: 9%;
     position: absolute !important;
 }
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 100;
+  }
 .toColumn {
     display: flex;
     flex-direction: column;
@@ -35,12 +45,28 @@
     background: rgba(255, 255, 255, 0.53);
     font-size: clamp(14px,0.8vw, 18px) !important;
 }
+.contactsFormContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.contactsFormContainer input {
+	color: #fff;
+	border-radius: 6px;
+	padding: 4% 3%;
+	border: none;
+	background: rgba(255, 255, 255, 0.53);
+	font-size: clamp(14px,0.8vw, 18px) !important;
+}
+.contactsFormContainer > * {
+    width: 40%;
+}
 .cityesContainer, .dataContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    color: #1B1B1B;
 }
 .dataContainer {
     margin-top: 10px;
@@ -180,7 +206,7 @@
     border-radius: 0 9px 9px 0;
 }
 .sliderForm input:not(input[type="name"]), .sliderForm button {
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .sliderForm button {
     font-weight: bold;
@@ -405,6 +431,7 @@
     }
 }
 @media screen and (max-width: 798px) {
+    
     .subscribeForm {
         display: flex;
         flex-direction: column;
@@ -413,9 +440,25 @@
     }
     .mainPageForm > img {
         z-index: -1;
-        object-fit: contain;
-        margin-left: -159%;
-        width: 2000px !important;
+        object-fit: cover;
+        margin-left: 0;
+        width: 100% !important;
+    }
+    .mainPageForm {
+        position: relative;
+        margin-top: 120px;
+        width: 100%;
+        height: clamp(600px, 35vw, 1000px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        background-color: rgba(0,0,0,0) !important;
+        padding: 2% 0 !important;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        grid-template-rows: 0 25% 22% 0% 60%;
+        justify-items: center;
+        align-items: center;
     }
     .mainPageForm > p:nth-child(2) {
         color: #fff;
@@ -427,6 +470,8 @@
         bottom: 92%;
         left: 10px;
         font-size: 5vw;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
     .mainPageForm h3 {
         font-family: "Inter";
@@ -435,30 +480,49 @@
         width: clamp(280px, 75%, 850px);
         text-transform: uppercase;
         color: #fff;
-        position: absolute;
-        top: 19%;
-        left: 14px;
+        position: relative;
+        top: 0;
+        left: 0;
+        grid-row-start: 4;
+        grid-row-end: 4;
     }
     .mainPageForm > p:last-child {
         width: clamp(100px, 82vw, 300px);
-        position: absolute;
+        position: relative;
         font-size: clamp(12px, 4.9vw, 16px);
-        left: 0px;
+        left: 0;
         bottom: 0;
-        transform: translate(16vw, -2vw);
+        transform: translate(0);
+        text-align: center;
+        color: #fff;
+        grid-row-start: 3;
+        grid-row-end: 3;
     }
     .mainPageForm .mainForm div {
         display: flex;
-        width: clamp(320px, 100%, 498px);
+        width: 100%;
         flex-direction: column;
         justify-content: space-between;
-        height: clamp(150px, 7vw, 200px);
+        height: clamp(150px,7vw,200px);
+    }
+    .mainPageForm form input {
+        border-radius: 9px;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 2%;
+        font-size: clamp(12px,1vw,16px);
+        max-width: 98%;
+        min-width: 98%;
+        width: 98%;
     }
     .mainPageForm .mainForm {
-        position: absolute;
-        right: 10%;
-        bottom: 30%;
+        position: relative;
+        right: 0;
+        bottom: 0;
         width: 77vw;
+        grid-row-start: 5;
+        grid-row-end: 5;
     }
     .mainPageForm > p:nth-child(2) {
         color: #fff;
@@ -520,6 +584,12 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .contactsFormContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
 @media screen and (max-width: 498px) {
     .moduleForm{
@@ -530,6 +600,37 @@
         padding: 4% 5%;
         border-radius: 20px;
         width: 85%;
+    }
+    .mainPageForm > p:nth-child(2) {
+        color: #fff;
+        background-color: rgba(0,0,0,.5);
+        width: max-content;
+        padding: 8px 20px;
+        border-radius: 9px;
+        position: relative;
+        font-size: 5vw;
+        height: 30px;
+        left: 0;
+        bottom: 0;
+    }
+    .mainPageForm h3 {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: clamp(25px,2vw,45px);
+        width: clamp(280px,76%,850px);
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        transform: translate(0);
+    }
+    .mainPageForm .mainForm {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 77vw;
     }
     .mainContainerForm {
         display: flex;
@@ -587,6 +688,7 @@
         font-weight: 900;
         font-size: 5vw;
     }
+
     .mainContainerForm form button {
         width: 100%;
         border: none;
@@ -609,20 +711,21 @@
         margin: 0 !important;
         right: 0;
         border-radius: 0;
-        height: 60%;
-        max-height: 60%;
+        height: 100%;
+        max-height: 100%;
         min-height: 100px !important;
-        padding-top: 30%;
-        padding-bottom: 41%;
+        padding-top: 10px;
+        padding-bottom: 10px;
         padding-right: 0;
         padding-left: 0;
     }
     .sliderForm h3 {
         font-size: 6vw;
         width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: auto !important;
         text-align: center;
         color: #fff;
+        margin-top: auto !important;
     }
     .sliderForm button {
         font-weight: bold;
@@ -634,16 +737,14 @@
         transition: all .3s;
         width: 95% !important;
         margin: auto;
-        margin-top: auto;
-        margin-left: auto;
-        margin-top: auto;
-        margin-left: auto;
-        margin-top: 112px;
+        margin-top: 3svh;
         margin-left: 2%;
+        margin-bottom: 40px;
     }
     .sliderForm > div {
         width: 96%;
         margin: auto;
+        height: max-content;
     }
     .cityesContainer > img {
         position: relative !important;
@@ -668,7 +769,7 @@
     }
     .dataContainer {
         margin-top: 10px;
-        height: 47px;
+        height: max-content;
     }
     .dataContainer .dataRow img {
         position: relative !important;

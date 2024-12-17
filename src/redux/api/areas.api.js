@@ -14,8 +14,8 @@ export const areasApi = api.injectEndpoints({
 export const areasIdApi = api.injectEndpoints({
     endpoints: builder => ({
         getAreasId: builder.query({
-            query: (id = 1,locale = 'ru') => ({
-                url: `/services/${id}?locale=${locale}&populate=*`,
+            query: ({id = 1, lang = 'ru'}) => ({
+                url: `/services/${id}?locale=${lang}&populate=*`,
                 method: 'GET',
             })
         })

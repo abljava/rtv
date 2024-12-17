@@ -3,26 +3,26 @@ import {api} from './api'
 export const dPagesApi = api.injectEndpoints({
     endpoints: (builder) => ({
         getAbout: builder.query({
-            query: (params) => ({
-                url: '/stranicza-o-kompanii?populate=*',
+            query: (lang) => ({
+                url: `/stranicza-o-kompanii?locale=${lang}&populate=*`,
                 method: 'GET',
             }),
         }),
         getOurWorks: builder.query({
-            query: (params) => ({
-                url: '/ourworks?populate=*',
+            query: (lang) => ({
+                url: `/ourworks?locale=${lang}&populate=*`,
                 method: 'GET'
             })
         }),
         getWorksId: builder.query({
-            query: (id) => ({
-                url: `/ourworks/${id}?populate=*`,
+            query: (id,lang) => ({
+                url: `/ourworks/${id}?locale=${lang}&populate=*`,
                 method: 'GET',
             })
         }),
         getClientsAndPartners: builder.query({
-           query: (params) => ({
-               url: `/stranicza-klienty-i-partnery?locale=${params}&populate=*`,
+           query: (lang) => ({
+               url: `/stranicza-klienty-i-partnery?locale=${lang}&populate=*`,
                method: 'GET',
            })
         }),

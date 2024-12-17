@@ -48,7 +48,7 @@ export const NavigationBar = ({ place = 'header', burgerSetter = false}) => {
                               {
                                 (typeof item.attributes.childs.data != 'undefined' && typeof  item.attributes.childs.data[0] != 'undefined') ?
                                     <>
-                                      <svg viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <svg viewBox="0 0 16 9" fill="none" xmlns="https://www.w3.org/2000/svg">
                                         <path d="M2 1.5L8.22581 7L14 1.5" stroke="#292929" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                                       </svg>
                                       <DropMenuItems showIndex = {showHeaderDrop} index = {index} lang = {lang} items = {item.attributes.childs.data} />
@@ -74,7 +74,7 @@ export const NavigationBar = ({ place = 'header', burgerSetter = false}) => {
 
                       data.data.map((item, index) => {
 
-                        if(item.id != 6  && item.id != 5 && item.id != 10 && item.id != 9) {
+                        if(item.id != 6  && item.id != 5 && item.id != 10 && item.id != 9 && item.id != 14) {
                           return (
                               <div key={`navmenu_footer_div${index}_${lang}`}
                                    className={`${footerStyle.footerNavColumn}`}>

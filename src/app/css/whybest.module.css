@@ -73,6 +73,14 @@
     font-weight: 500;
     line-height: normal;
 }
+@media screen and (max-width: 1550px) {
+    .bestBlock .neBlock:last-child {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5.5%;
+        margin-top: -1%;
+    }
+}
 
 @media screen and (max-width: 798px) {
     .whybestContainer p {
@@ -80,6 +88,10 @@
         color: rgba(0, 0, 0, 0.60);
         font-size: clamp(13px,1vw,13px);
         line-height: 26px;
+    }
+    .bestBlock .whybest_oneBlock:first-child {
+        display: flex;
+        align-items: flex-start;
     }
     .whybestContainer {
         position: relative;
@@ -95,7 +107,7 @@
         padding: 30px 21px;
     }
     .downBlock {
-        overflow: hidden;
+        overflow: visible;
         min-height: 1100px;
     }
     .bestBlock {
@@ -110,6 +122,8 @@
         display: flex;
         flex-direction: column;
         margin-left: 22.3%;
+        white-space: break-spaces;
+        margin-top: 10px;
     }
     .bestBlock .oneBlock p {
         width: clamp(150px, 72vw, 450px);

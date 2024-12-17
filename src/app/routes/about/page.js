@@ -21,7 +21,7 @@ export default function Page({params}) {
     const router = useRouter();
     const {lang, moduleWindow, mobile} = useMain();
 
-    const {isLoading, error, data} = useGetAboutQuery();
+    const {isLoading, error, data} = useGetAboutQuery(lang);
 
     useEffect(() => {
         console.log(moduleWindow)

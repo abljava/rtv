@@ -32,6 +32,11 @@ export default function Page({params}) {
         en: "Services"
     }
 
+    const buttonLang  = {
+        ru: "Подробнее",
+        en: "More details"
+    }
+
     useEffect(() => {},[data, lang])
 
     // <div className={`${stylesService.newsIco}`}>
@@ -59,7 +64,7 @@ export default function Page({params}) {
                                             <h3>{item.attributes.title}</h3>
 
                                         <Link href = {`/routes/services/${item.id}`}>
-                                            Подробнее
+                                            {buttonLang[lang]}
                                         </Link>
                                     </article>
                                 )

@@ -114,7 +114,7 @@ const Video = ({data = {}, index = -1, setSelectedVideo = f => f, selectedVideo 
                       setPlay(!play)
                       setSelectedVideo(index)
                     }
-            } width="42" height="49" viewBox="0 0 42 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            } width="42" height="49" viewBox="0 0 42 49" fill="none" xmlns="https://www.w3.org/2000/svg">
                 <path d="M42 24.5L0.749998 48.3157L0.75 0.6843L42 24.5Z" fill="white"/>
             </svg>
             <video ref = {videoRef} autoPlay={play} src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${data.attributes.video.data.attributes.url}`} alt = {data.attributes.title} fill />

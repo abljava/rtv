@@ -26,18 +26,23 @@ export default function Page({params}) {
 
     const {lang, moduleWindow} = useMain();
 
-    const {isLoading, error, data} = useGetAreasIdQuery(Number.parseInt(params.slug));
+    const {isLoading, error, data} = useGetAreasIdQuery({id: Number.parseInt(params.slug), lang: lang})
 
     useEffect(() => {
         //
     },[data])
+
+    const russiaLang = {
+        'ru': ' по России',
+        'en': ' in Russia'
+    }
 
     return (
         <>
             {
                 (isLoading) ? <Loader />
                     : (data) ?
-                        <Slider title = {(!isLoading) ? (data) ? data.data.attributes?.title + ' по России' : '' : "Загрузка..."} image = {(data) ? `${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${data.data.attributes?.headerImage.data.attributes.url}` : ''} />
+                        <Slider title = {(!isLoading) ? (data) ? data.data.attributes?.title : '' : "Загрузка..."} image = {(data) ? `${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${data.data.attributes?.headerImage.data.attributes.url}` : ''} />
                     : null
             }
 

@@ -2,7 +2,10 @@
     margin-bottom: 30px;
 }
 .clientPage > *:first-child {
-    margin-top: 80px !important;
+	margin-top: 80px !important;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
 }
 .w50 {
     width: 70%;
@@ -22,6 +25,9 @@
 }
 .mt150 {
     margin-top: 150px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
 }
 .text2 p {
     width: 70%;

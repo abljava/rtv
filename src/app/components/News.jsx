@@ -51,7 +51,7 @@ const News = ({langprop}) => {
                                     <article key = {`newsKey_${index}`} className = {`${styles.newsBlock}`}>
                                         <Link href = {`/routes/news/${item.id}`}>
                                             <div className={`${styles.newsIco}`}>
-                                                <Image unoptimized src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`} alt = {item.attributes.name} fill/>
+                                                <Image unoptimized  src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`} alt = {item.attributes.name} fill/>
                                             </div>
                                             <p>{(item.attributes.createdAt).split('T')[0]}</p>
                                             <h3>{item.attributes.title}</h3>

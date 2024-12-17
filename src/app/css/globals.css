@@ -127,6 +127,11 @@ a {
 video {
     filter: brightness(0.7);
 }
+@media screen and (max-width: 1550px) {
+    body > main {
+        width: 92.5%;
+    }
+}
 @media screen and (max-width: 798px) {
     body > :not(:nth-child(1)), body > :nth-child(1) > * {
         margin-top: 0;
