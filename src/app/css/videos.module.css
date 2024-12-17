@@ -1,0 +1,164 @@
+.text0 h1 {
+    margin-bottom: 30px;
+}
+.clientPage > *:first-child {
+    margin-top: 80px !important;
+}
+.w50 {
+    width: 70%;
+}
+.text1, .text0, .text2 {
+    margin-top: 50px;
+}
+.text1 > div {
+    width: 80% !important;
+    margin-left: 0 !important;
+    transform: none;
+}
+.text1 > div > div:first-child {
+    margin-left: -13% !important;
+}
+.text2 h2 {
+}
+.mt150 {
+    margin-top: 150px;
+}
+.text2 p {
+    width: 70%;
+    margin-top: 15px;
+}
+.text1 h2 {
+    margin-top: 110px;
+}
+.text0 h1 {
+    margin-top: 100px;
+}
+.openWorkContainer > *:first-child {
+    margin-top: 60px;
+    overflow: hidden;
+    border-radius: 6px;
+    height: 43vw;
+    max-height: 650px;
+}
+.openWorkContainer > *:first-child form {
+    display: none;
+}
+.openWorkContainer > *:first-child img {
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.videosContainer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 6%;
+    min-height: max-content;
+    margin-top: 100px;
+}
+.videosContainer, .videosContainer img {
+    position: relative !important;
+}
+.videoBlock {
+    position: relative !important;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 9;
+}
+.playingVideo {
+    scale: 1.5;
+    z-index: 99999;
+}
+.playingVideo svg {
+    opacity: 0.2;
+}
+.videoBlock video {
+    width: 100%;
+    height: auto;
+    flex: auto;
+}
+.videoBlock svg {
+    position: absolute;
+    z-index: 2;
+    left: 48%;
+    top: 35%;
+    transition: all .3s;
+    cursor: pointer;
+}
+.videoBlock svg:hover {
+    scale: 1.4;
+}
+.videoBlock * {
+    color: #292929;
+}
+.videoBlock h2 {
+    height: 40px;
+    font-size: clamp(16px, 1vw, 20px) !important;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.videoBlock p:last-child {
+    margin-top: 20px;
+}
+.videoBlock img {
+    width: 100% !important;
+    height: clamp(150px, 82%, 450px) !important;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.proxyImage {
+    position: relative;
+    width: clamp(150px, 10vw, 250px);
+    padding: 10px;
+    display: flex;
+}
+.proxyImage img {
+    position: relative !important;
+    flex: auto;
+    object-fit: contain !important;
+}
+.scrollData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 30px;
+    padding: 10px 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+}
+.scrollData > *:not(:first-child) {
+    margin-left: 20px;
+}
+.text2 img {
+    position: relative !important;
+    margin-top: 50px;
+}
+.toCenterBlock {
+    margin-top: 160px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 100px !important;
+}
+
+@media screen and (max-width: 798px) {
+    .videosContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 6%;
+        gap: 6%;
+        min-height: max-content;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 498px) {
+
+}
+
+@media screen and (min-width: 1500px) {
+
+}

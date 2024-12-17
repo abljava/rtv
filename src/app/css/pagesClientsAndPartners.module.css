@@ -1,0 +1,121 @@
+.text0 h1 {
+    margin-bottom: 30px;
+}
+.clientPage > *:first-child {
+    margin-top: 80px !important;
+}
+.w50 {
+    width: 70%;
+}
+.text1, .text0, .text2 {
+    margin-top: 50px;
+}
+.text1 > div {
+    width: 80% !important;
+    margin-left: 0 !important;
+    transform: none;
+}
+.text1 > div > div:first-child {
+    margin-left: -13% !important;
+}
+.text2 h2 {
+}
+.mt150 {
+    margin-top: 150px;
+}
+.text2 p {
+    width: 70%;
+    margin-top: 15px;
+}
+.text1 h2 {
+    margin-top: 110px;
+}
+.text0 h1 {
+    margin-top: 100px;
+}
+.proxyImage {
+    position: relative;
+    width: clamp(150px, 10vw, 250px);
+    padding: 10px;
+    display: flex;
+}
+.proxyImage img {
+    position: relative !important;
+    flex: auto;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+.scrollData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 30px;
+    padding: 10px 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+}
+.scrollData > *:not(:first-child) {
+    margin-left: 20px;
+}
+.text2 img {
+    position: relative !important;
+    margin-top: 50px;
+}
+.toCenterBlock {
+    margin-top: 160px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 100px !important;
+}
+
+@media screen and (max-width: 798px) {
+    .mt150 {
+        margin-top: 10px;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    .text2 img {
+        position: relative !important;
+        margin-top: 0;
+    }
+    .scrollData {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 30px;
+        padding: 10px 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        width: 93vw;
+    }
+    .proxyImage {
+        position: relative;
+        width: clamp(150px, 10vw, 250px);
+        padding: 10px;
+        display: flex;
+        min-width: 100px;
+    }
+    .text2 p {
+        width: 98%;
+        margin-top: 15px;
+    }
+    .clientPage > *:first-child {
+        margin-top: 20px !important;
+    }
+}
+@media screen and (max-width: 498px) {
+
+}
+
+@media screen and (min-width: 1500px) {
+
+}

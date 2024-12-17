@@ -1,0 +1,19 @@
+.downBlock {
+    position: relative;
+    height: 600px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.downBlock img {
+    object-fit: contain;
+    transition: all .5s;
+}
+
+@media screen and (max-width: 768px) {
+    .lupa {
+        position: absolute;
+        transform: translate(42vw,75vw);
+        cursor: pointer;
+        z-index: 9999;
+    }
+}

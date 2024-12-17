@@ -1,0 +1,279 @@
+.jobsContainer {
+    margin-top: 140px;
+}
+.jobs_infoBlock {
+    min-height: 300px;
+}
+.jobs_infoBlock {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+}
+.jobs_infoBlock img {
+    position: relative !important;
+}
+.infoJobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: rgba(29, 100, 180, 0.06);
+    margin-left: 20px;
+    padding: 15%;
+}
+.infoJobs h3 {
+    font-family: Inter;
+    font-size: clamp(23px, 2vw, 30px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-transform: uppercase;
+}
+.infoJobs p {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    color: rgba(0, 0, 0, 0.60);
+}
+.infoJobs a {
+    border-radius: 5px;
+    border: 2px solid #1D64B4;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #1D64B4;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 15px;
+    margin-top: 20px;
+    transition: all .3s;
+}
+.infoJobs a:hover {
+    color: #fff;
+    background: #1D64B4;
+}
+.downBlock {
+    position: relative;
+    height: 600px;
+    margin-top: 8px;
+}
+.downBlock img {
+    object-fit: contain;
+}
+.jobsBigContainer {
+    position: relative;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 550px);
+    margin-top: 60px;
+    grid-gap: 20px 5%;
+    gap: 16% 10%;
+    margin-right: auto;
+}
+.jobsBigContainer * {
+    position: relative;
+}
+.contenter > h2 {
+    color: #1B1B1B;
+    width: 100%;
+    margin-top: 80px;
+    font-family: Inter;
+    font-size: clamp(25px, 1vw, 35);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+}
+.plusesContainer {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,450px));
+}
+.plusBlock {
+    position: relative;
+    display: flex;
+    padding: 27px 30px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #1D64B4;
+}
+.plusIco {
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 48px;
+    max-height: 48px;
+    height: 100%;
+    width: 6%;
+}
+.plusBlock img {
+    object-fit: contain !important;
+    position: relative !important;
+}
+.plusBlock *:not(img) {
+    color: #1B1B1B;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+}
+.jobsBlock {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 49%;
+    grid-template-rows: 100%;
+    min-height: 177px;
+    gap: 43px;
+    height: 279px;
+}
+.jobsBlock h3 {
+    color: #1B1B1B;
+    font-family: Inter;
+    font-size: clamp(14px,1.1vw,27px);
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 23px;
+}
+.infoJobsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infoJobsText  {
+
+}
+.infoJobsText > div > p {
+    min-width: max-content;
+    color: rgba(27, 27, 27, 0.60) !important;
+    font-family: Inter;
+    font-size: clamp(16px, 0.7vw, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.infoJobsText > p {
+    min-width: 100%;
+    color: #1B1B1B;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 00 !important;
+    line-height: 26px; /* 162.5% */
+}
+.infoJobsText > div {
+    width: 100%;
+}
+.infoJobsText > div > p {
+    color: #1B1B1B;
+    font-family: Inter;
+    font-size: clamp(14px,0.9vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.jobsIco {
+
+}
+.jobsBlock img {
+    overflow: hidden;
+    border-radius: 24px;
+    object-fit: cover;
+}
+.jobsBlock button {
+    color: #1D64B4;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 19px 65px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    border: 2px solid #1D64B4;
+    width: 100%;
+}
+
+@media screen and (max-width: 798px) {
+    .infoBlock {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr;
+    }
+    .plusesContainer{
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-gap: 20px;
+        gap: 20px;
+        grid-template-columns: auto;
+        height: max-content;
+        grid-auto-rows: auto;
+    }
+    .infoBlock img {
+        position: relative !important;
+        height: 330px !important;
+        object-fit: cover;
+        border-radius: 13px;
+    }
+    .infoBlock > *:first-child {
+        order: 2;
+    }
+    .infoJobs {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: rgba(29, 100, 180, 0.06);
+        margin-left: 0;
+        padding: 7%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .jobsBigContainer {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-flow: dense;
+        margin-top: 60px;
+        grid-gap: 3%;
+        gap: 3%;
+        margin-right: auto;
+        height: max-content;
+        min-height: max-content;
+    }
+    .jobsBlock > :first-child {
+        display: none;
+    }
+    .jobsBlock:last-child {
+        border-bottom: none;
+    }
+    .jobsBlock {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        min-height: 283px;
+        gap: 23px 43px;
+        border-bottom: 2px solid rgba(29, 100, 180, 0.3);
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,219 @@
+.informPage {
+    margin-top: 100px;
+}
+.informContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 500px;
+}
+.informContainer .upBlock {
+    position: relative;
+    width: 100%
+}
+.informContainer .upBlock .upNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.informContainer .upBlock .upNav button {
+    border-radius: 9px;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: clamp(12px, 1vw, 16px);
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s;
+}
+.informContainer .upBlock .upNav button:hover {
+    scale: 1.05 !important;
+}
+.informContainer .upBlock .upNav button:not(:first-child) {
+    margin-left: 20px;
+}
+
+.informContainer .upBlock .downForm form div div input {
+    border-radius: 6px;
+    width: 89%;
+    margin: auto;
+    opacity: 0.5;
+}
+.informContainer .upBlock .downForm form button {
+    border-radius: 9px;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: clamp(12px, 1vw, 16px);
+    color: #fff;
+    width: 80%;
+    margin: auto !important;
+}
+.rulesColumnBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.rulesColumnBlock li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+}
+.rulesColumnBlock li p {
+    font-weight: 600;
+}
+.rulesColumnBlock li:not(:first-child) {
+    margin-top: 20px;
+}
+.rulesColumnBlock li a {
+    display: flex;
+    transition: all .3s;
+}
+.rulesColumnBlock li a:hover {
+    scale: 1.05;
+}
+.columnBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.reqColumnBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.columnBlock li::before, .rulesColumnBlock li a::before {
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #FFA800;
+    margin-right: 5px;
+    border-radius: 50%;
+    transition: all .3s;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.columnBlock li:hover {
+    scale: 1.01;
+}
+.columnBlock li::marker {
+
+}
+.columnBlock li, .rulesColumnBlock li  {
+    transition: all .3s;
+}
+.columnBlock li a, .rulesColumnBlock li a {
+    color: #FFA800;
+}
+.columnBlock li:not(:first-child) {
+    margin-top: 10px;
+}
+.reqColumnBlock p:nth-child(odd) {
+    width: 30%;
+    font-weight: 600;
+}
+.reqColumnBlock p:nth-child(even) {
+    width: 50%;
+    margin-left: 4%;
+}
+.informContainer .upBlock .downForm form div div input:not(:first-child) {
+    margin-top: 10px;
+}
+.informContainer .downBlock {
+    width: 100%;
+    margin-top: 50px;
+}
+.informContainer .downBlock > *:not(a) {
+    margin-bottom: 20px;
+}
+.informContainer .downBlock > h2, .tarrifsContainer .rightBlock > a {
+    text-transform: uppercase;
+    color: #292929;
+}
+.informContainer .downBlock > a {
+    border-bottom: 2px solid #292929;
+}
+.informContainer .downBlock > *:not(h2) {
+    margin-top: 20px;
+}
+.informContainer .downBlock ul {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.informContainer .downBlock ul li {
+    display: flex;
+    align-items: center;
+
+}
+.informContainer .upBlock label {
+    font-size: clamp(12px, 0.7vw, 16px);
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toCenterBlock {
+    margin-top: 100px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 100px !important;
+}
+
+@media screen and (max-width: 798px) {
+    .informContainer .upBlock .upNav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .informContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 100px;
+    }
+    .informContainer .upBlock .upNav button:not(:first-child) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .reqColumnBlock p:nth-child(odd) {
+        width: 100%;
+        font-weight: 600;
+    }
+    .reqColumnBlock p:nth-child(even) {
+        width: 81%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .informContainer .downBlock {
+        width: 100%;
+        margin-top: 0;
+    }
+    .informContainer .downBlock ul {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 498px) {
+
+}
+
+@media screen and (min-width: 1500px) {
+
+}

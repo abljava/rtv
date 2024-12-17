@@ -1,0 +1,25 @@
+{
+  "name": "RTV",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build_p": "NODE_ENV=production yarn build",
+    "start_p": "NODE_ENV=production yarn start",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.1.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-lottie": "^1.2.3",
+    "react-redux": "^8.1.2",
+    "sharp": "^0.32.6"
+  }
+}
