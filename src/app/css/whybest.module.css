@@ -1,0 +1,151 @@
+.whybestContainer {
+    position: relative;
+    width: 100%;
+}
+.whybestContainer * {
+    position: relative;
+}
+.whybestContainer p {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.60);
+}
+.bestBlock:first-child {
+    margin-top: 60px;
+}
+.bestBlock:not(:first-child) {
+    margin-top: 10px;
+}
+.bestBlock {
+    border-radius: 20px;
+    padding: 14px 0;
+    min-height: 100px;
+}
+.bestBlock .oneBlock {
+    display: flex;
+}
+.bestBlock .oneBlock:first-child {
+    display: flex;
+    align-items: center;
+}
+.downBlock {
+    overflow: hidden;
+}
+.downBlock > img {
+    height: 130% !important;
+    width: auto !important;
+    left: 40% !important;
+    left: 40% !important;
+    top: -30% !important;
+    z-index: -1;
+}
+.bestBlock .oneBlock:first-child h3 {
+    margin-left: 9px;
+    color: #1D64B4;
+    text-align: right;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.bestBlock .oneBlock p {
+    width: clamp(150px,40vw, 450px);
+}
+.bestBlock .oneBlock:first-child h2 {
+    margin-left: 1% !important;
+}
+.bestBlock .oneBlock:first-child img {
+    width: clamp(42px,7vw,64px) !important;
+    position: relative !important;
+    margin-bottom: -15px;
+}
+.bestBlock .oneBlock:last-child {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.3%;
+}
+.bestBlock .oneBlock:last-child h2 {
+    color: #1B1B1B;
+    font-family: Inter;
+    margin-top: 18px;
+    font-size: clamp(20px,1.2vw,22px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+@media screen and (max-width: 1550px) {
+    .bestBlock .neBlock:last-child {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5.5%;
+        margin-top: -1%;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .whybestContainer p {
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.60);
+        font-size: clamp(13px,1vw,13px);
+        line-height: 26px;
+    }
+    .bestBlock .whybest_oneBlock:first-child {
+        display: flex;
+        align-items: flex-start;
+    }
+    .whybestContainer {
+        position: relative;
+        width: 92%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .bestBlock:first-child {
+        margin-top: 30px;
+    }
+    .bestBlock {
+        border-radius: 20px;
+        padding: 30px 21px;
+    }
+    .downBlock {
+        overflow: visible;
+        min-height: 1100px;
+    }
+    .bestBlock {
+        margin-left: 0 !important;
+        padding-left: 0;
+    }
+    .bestBlock .oneBlock:first-child img {
+        width: clamp(42px,15vw,64px) !important;
+        margin-right: 3%;
+    }
+    .bestBlock .oneBlock:last-child {
+        display: flex;
+        flex-direction: column;
+        margin-left: 22.3%;
+        white-space: break-spaces;
+        margin-top: 10px;
+    }
+    .bestBlock .oneBlock p {
+        width: clamp(150px, 72vw, 450px);
+        margin-right: 10px;
+        margin-top: 0;
+
+    }
+    .downBlock > img {
+        height: 40% !important;
+        width: auto !important;
+        left: 40% !important;
+        left: 5% !important;
+        top: 58% !important;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .whybestContainer {
+        position: relative;
+        width: 92%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}

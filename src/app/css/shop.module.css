@@ -1,0 +1,454 @@
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    border-radius: 20px;
+    margin-top: 120px;
+}
+.productContainer .upBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.upBlock .left {
+    min-width: 70%;
+}
+.upBlock .right {
+    min-width: 28%;
+    margin-left: 2%;
+    font-size: 1vw;
+}
+.upBlock h2, .upBlock strong {
+    font-size: 3vw;
+    font-weight: 800;
+}
+.upBlock h2 {
+    color: #000;
+    text-transform: uppercase;
+}
+.upBlock strong {
+
+}
+.productContainer .downBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+}
+.productContainer .downBlock::-webkit-scrollbar-thumb {
+    background-color: #FFCA18;
+}
+.productContainer .downBlock.downBlock::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaaaaa; /* or add it to the track */
+}
+.buttonToShop {
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 600;
+    width: 30vw;
+    min-width: 150px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 27px;
+    background: var(--orange, #FFCA18);
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    transition: all .3s;
+}
+.buttonToShop:hover {
+    scale: 1.1;
+}
+
+/* Карточки товаров */
+.productCartLink {
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 88%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #000;
+    z-index: 0;
+}
+.productCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 21%;
+    max-width: 556px;
+    height: 25vw;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.productCard .stock {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.productCard .stock .iconStock {
+    position: relative;
+    height: 70%;
+    width: 10%;
+}
+.productCard .stock p {
+    font-size: 1vw;
+    margin-left: 5%;
+}
+.productCard:hover {
+    scale: 1.03;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.productContainer .productCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productContainer .productCard {
+    margin-left: 2%;
+}
+.productCardImage {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+.productCardImage img {
+    object-fit: contain;
+}
+.productCartDownBlock {
+    position: relative;
+    height: 13%;
+    z-index: 999;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.productCardQuntity {
+    position: relative;
+    height: 100%;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 40%;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+}
+.productCardQuntity p {
+    width: 30%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.productCardButton {
+    position: relative;
+    width: 15%;
+    min-height: 30%;
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+
+    z-index: 9999;
+}
+.productCardButton:hover {
+    scale: 1.1;
+}
+.productCardTitle {
+    font-size: 1.3vw;
+    margin-bottom: 20px;
+    min-height: 25%;
+    max-height: 25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.addToCartButton {
+    border-radius: 160px;
+    background: var(--orange, #FFCA18);
+    border: none;
+    font-size: 0.9vw;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+    height: 100%;
+    max-width: 55%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.filtersContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.shopContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+.filtersContainer {
+    width: 20%;
+}
+.shopBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-left: 5%;
+    justify-content: flex-start;
+}
+.shopBlock .productCard {
+    width: 30%;
+    margin-left: 2%;
+}
+.shopBlock .productCard:first-child, .shopBlock .productCard:nth-child(3n + 1) {
+    margin-left: 0;
+}
+.shopBlock .productCard:nth-child(n + 4) {
+    margin-top: 2%;
+}
+.filtersBlock * {
+    font-family: 'Inter';
+}
+.childCategories {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: visible;
+    overflow-y: hidden;
+    transition: all 1s;
+    height: 100%;
+    transition: all 1s;
+}
+.filterItem {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    cursor: pointer;
+}
+@keyframes opened {
+    0% {height: 0px;}
+    100% {height: 20px;}
+}
+@keyframes closed {
+    0% {height: 20px;}
+    100% {height: 0px;}
+}
+@keyframes fromLeft {
+    0% {transform: translateX(-50%);}
+    100% {transform: translateX(0);}
+}
+@keyframes toLeft {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+}
+.openedChild {
+    position: relative;
+    transition: all 1s;
+}
+.childCategories li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    animation-name: opened, fromLeft;
+    animation-duration: 1s, 1s;
+}
+.hiddenChild {
+    animation-name: closed;
+    animation-duration: 1s, 1s;
+    height: 0px;
+    animation-iteration-count: 1, 1;
+}
+.hiddenChild li {
+    animation-name: closed, toLeft;
+    animation-duration: 1s, 1s;
+    height: 0px;
+    animation-iteration-count: 1, 1;
+}
+
+@media screen and (max-width: 798px) {
+    .productCardTitle {
+        font-size: 1.3vw;
+        margin-bottom: 20px;
+        min-height: 38%;
+        max-height: 25%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .productContainer .upBlock{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .upBlock h2, .upBlock strong {
+        font-size: 5vw;
+        font-weight: 800;
+    }
+    .shopContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 120px;
+        flex-direction: column;
+    }
+    .shopBlock{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+    .shopBlock .productCard {
+        width: 30%;
+        margin: 0;
+        animation: opacity 1s 1;
+    }
+    @keyframes opacity {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .shopBlock .productCard:nth-child(n + 3) {
+        margin-top: 20px;
+    }
+    .productCardQuntity p {
+        width: 30%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4.1vw;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .filtersContainer {
+        width: 100%;
+        margin-bottom: 60px;
+        margin-left: 20px;
+    }
+    .upBlock .right {
+        min-width: 28%;
+        margin-left: 0;
+        font-size: 3vw;
+        width: 65%;
+    }
+    .productCard {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 45%;
+        max-width: 556px;
+        height: 58vw;
+        background-color: #fff;
+        padding: 1%;
+        border-radius: 27px;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    }
+    .productCard .stock p {
+        font-size: 3.2vw;
+    }
+    .productCardTitle {
+        font-size: 3.1vw;
+        margin-bottom: 20px;
+        min-height: 38%;
+        max-height: 25%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .addToCartButton {
+        border-radius: 160px;
+        background: var(--orange, #FFCA18);
+        border: none;
+        font-size: 2.5vw;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10%;
+        height: 100%;
+        max-width: 55%;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .buttonToShop{
+        text-decoration: none;
+        padding: 5%;
+        font-weight: 600;
+        width: 30vw;
+        min-width: 150px;
+        max-width: 300px;
+        text-align: center;
+        border-radius: 27px;
+        background: var(--orange, #FFCA18);
+        color: #000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        transition: all .3s;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .upBlock h2, .upBlock strong {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .upBlock .right {
+        font-size: 16px;
+    }
+    .productCard {
+        height: 400px;
+    }
+    .productCardTitle {
+        font-size: 16px;
+    }
+    .addToCartButton, .productCardQuntity p {
+        font-size: 16px;
+    }
+    .productCard .stock p {
+        font-size: 16px;
+    }
+}

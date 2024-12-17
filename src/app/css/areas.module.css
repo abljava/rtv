@@ -1,0 +1,284 @@
+.areasContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.areasContainer > h2 {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.oneBlock {
+    height: 100%;
+    position: relative;
+}
+.areaBlock {
+    position: relative;
+    display: flex;
+    border: 3px solid #E0E0E0;
+    border-radius: 20px;
+    width: 31%;
+    margin-top: 2%;
+    height: 42%;
+    overflow: hidden;
+    transition: all .3s;
+}
+.areaBlock:hover  {
+    scale: 1.1;
+}
+.areaBlock:nth-child(3), .areaBlock:nth-child(4), .areaBlock:nth-child(7) {
+    background-color: #292929;
+    color: #fff;
+    border: 3px solid #292929;
+}
+.areaBlock:nth-child(3) path, .areaBlock:nth-child(4) path, .areaBlock:nth-child(7) path {
+    fill: #262626 !important;
+}
+.areaBlock:not(:nth-child(3)) path, .areaBlock:not(:nth-child(4)) path, .areaBlock:not(:nth-child(7)) path{
+    fill: #fff;
+}
+.areaBlock > img {
+    z-index: 0;
+    opacity: 0.2;
+}
+.areaBlock > :not(img) {
+    z-index: 1;
+}
+.areaBlock:nth-child(5) a {
+    display: flex;
+    justify-content: flex-end;
+    width: clamp(80px, 100%, 250px);
+    border-radius: 50px;
+    color: #fff;
+}
+.areaBlock:nth-child(5) a {
+    margin: auto;
+}
+.areaBlock:nth-child(5) a svg {
+    flex: auto;
+}
+.circleWhite {
+    display: flex;
+    align-items: center;
+    width: clamp(32px, 12vw, 46px);
+    height: clamp(32px, 12vw, 46px);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: clamp(10px, 5%, 20px);
+    margin-right: 5px;
+}
+.areaBlock:nth-child(5) a path {
+    fill: #292929 !important;
+}
+.downBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: clamp(334px, 60vw, 740px);
+}
+.areaBlock {
+    cursor: pointer;
+}
+.areaBlock:nth-child(even) {
+
+}
+.areaBlock img {
+    object-fit: cover;
+}
+.areaBlock:nth-child(even) img {
+    border-radius: 20px;
+}
+.areaBlock:nth-child(even) .oneBlock:first-child {
+    border-radius: 20px 20px 20px 20px;
+}
+.areaBlock:nth-child(odd) img {
+    border-radius: 20px;
+}
+.oneBlock:first-child {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: clamp(200px,20vw,50px);
+    border-radius: 20px 0 0 20px;
+    padding: 0% 6% 6% 6%;
+    margin-top: 0;
+    margin-bottom: auto;
+    height: max-content;
+    height: 100%;
+    width: 100%;
+}
+.oneBlock:first-child > *:not(a){
+    width: 100% !important;
+}
+.oneBlock:first-child > :nth-child(3) {
+    margin-bottom: 20px !important;
+}
+.oneBlock:first-child > *:nth-child(1) {
+    margin-top: 20px;
+    height: 20px !important;
+    min-height: auto
+}
+.oneBlock:first-child > ul *:not(:first-child) {
+    margin-top: 5px;
+}
+.oneBlock:first-child > *:nth-child(2) {
+    margin-top: 20px !important;;
+    margin-bottom: auto !important;
+}
+.areaBlock:nth-child(odd) .oneBlock ul {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 80%;
+}
+.areaBlock:nth-child(even) .oneBlock ul {
+    margin-top: 20px;
+    margin-right: 0;
+    width: 80%;
+}
+.oneBlock:first-child ul li:not(:first-child) {
+    margin-top: 20px;
+}
+.areaBlock path {
+    fill: #333;
+}
+.oneBlock:nth-child(2) {
+    position: absolute;
+    top: clamp(10px, 15%, 100px);
+    right: clamp(10px, 15%, 100px);
+    height: clamp(32px,6vw,110px);
+    width: clamp(32px,6vw,110px);
+}
+.oneBlock > a {
+    border-radius: 50%;
+    border: 2px solid #262626;
+    width: clamp(32px, 14vw, 52px);
+    height: clamp(32px, 14vw, 52px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+    margin-top: 20px;
+    transition: all .3s;
+    min-width: max-content;
+}
+.oneBlock > a {
+    background-color: #292929;
+}
+.areaBlock:nth-child(3) .oneBlock > a, .areaBlock:nth-child(4) .oneBlock > a , .areaBlock:nth-child(7) .oneBlock > a  {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #fff;
+}
+.areaBlock:nth-child(5) {
+    height: 88.8%;
+}
+.oneBlock h2 {
+    font-family: Inter;
+    font-size: clamp(20px,1.2vw,25px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.oneBlock ul {
+
+}
+.oneBlock ul li h5 {
+    font-family: Inter;
+    font-size: clamp(14px,0.8vw,15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.oneBlock > a:hover {
+    color: #fff;
+    background: #262626;
+}
+@media screen and (max-width: 1550px) {
+
+}
+@media screen and (max-width: 768px) {
+    .oneBlock:first-child > *:first-child {
+        margin-top: 20px;
+    }
+    .oneBlock:first-child {
+        padding: 10% 10% 21% 6%;
+    }
+    .areaBlock {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        width: 98%;
+        height: 300px;
+    }
+    .oneBlock:last-child {
+        min-height: 4vw;
+        height: 52vw;
+    }
+    .areasContainer {
+        margin: 0 !important;
+        max-width: 80% !important;
+    }
+    .areasContainer > div {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        width: 100% !important;
+        margin: auto;
+    }
+    .downBlock {
+        height: max-content !important;
+    }
+    .oneBlock img {
+        width: 24vw;
+    }
+    .oneBlock:nth-child(2) {
+        position: absolute;
+        top: clamp(10px, 15%, 100px);
+        right: clamp(10px, 24%, 100px);
+        height: clamp(32px,6vw,110px);
+        width: clamp(32px,6vw,110px);
+    }
+    .oneBlock:first-child > :nth-child(3) {
+        position: absolute;
+        margin-bottom: 0 !important;
+        top: 60% !important;
+    }
+    .oneBlock ul {
+        margin-top: 36px !important;
+        margin-left: 0 !important;
+        width: 60% !important;
+    }
+    .areaBlock:nth-child(2n) .oneBlock ul {
+        margin-top: 40px !important;
+        margin-right: 0;
+        width: 60% !important;
+    }
+    .oneBlock:first-child > :not(a) {
+        width: 76% !important;
+    }
+    .areaBlock:last-child ul{
+        width: 60% !important;
+    }
+    .areaBlock:last-child  a:nth-child(3) {
+        position: absolute;
+        margin-bottom: 0 !important;
+        top: 200px !important;
+    }
+    .areaBlock:nth-child(5) {
+        height: 303px;
+    }
+}
+@media screen and (max-width: 468px) {
+    .oneBlock ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 4.5%;
+    }
+
+}

@@ -1,0 +1,105 @@
+.officeContainer , .officeContainer * {
+    position: relative;
+}
+.officeContainer {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1.5fr));
+
+    width: 100%;
+}
+.mapContacts p {
+    transition: all .3s;
+    cursor: pointer;
+}
+.mapContacts nav {
+    width: 27% !important;
+    margin-bottom: 20px;
+    font-size: clamp(10px, 0.8vw, 14px ) !important;
+    font-weight: 500;
+}
+.rowContacts {
+    width: 50%;
+}
+.rowContacts > * {
+    display: flex;
+}
+.rowContacts > *:first-child {
+    background-color: #FFF3E8;
+}
+.rowContacts > *:not(:first-child) {
+    padding: 10px 5px;
+    border-bottom: 1px solid #4B4B4B;
+}
+.rowContacts > * > *:nth-child(1) {
+    width: 30%;
+    padding: 5px;
+}
+.rowContacts > * > *:nth-child(2) {
+    width: 70%;
+    padding: 5px;
+}
+.oneOffice {
+    padding: 18px 28px 18px 29px;
+    border-radius: 10px;
+    border: 2px solid #1D64B4;
+    margin: 0;
+
+}
+.oneOffice > div img {
+    position: relative !important;
+    width: clamp(16px,  1vw, 24px)  !important;
+    height: clamp(16px, 1vw, 24px) !important;
+}
+.oneOffice > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    max-width: max-content !important;
+    width: max-content  !important;
+}
+.oneOffice > h3 {
+    color: #1D64B4;
+    font-family: Inter;
+    font-size: clamp(16px, 1vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: max-content;
+}
+.oneOffice > div > a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: Inter;
+    color: #1B1B1B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media screen and (max-width: 798px) {
+    .rowContacts {
+        width: 100%;
+    }
+    .mapContacts nav {
+        width: 27% !important;
+        margin-bottom: 20px;
+        font-size: clamp(16px, 3.8vw, 14px ) !important;
+        font-weight: 500;
+    }
+    .mapContacts {
+        min-height: 600px;
+    }
+}
+@media screen and (max-width: 468px) {
+    .rowContacts {
+        width: 100%;
+    }
+    .mapContacts nav {
+        width: 27% !important;
+        margin-bottom: 20px;
+        font-size: clamp(16px, 3.8vw, 14px ) !important;
+        font-weight: 500;
+    }
+}

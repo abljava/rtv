@@ -1,0 +1,84 @@
+.text0 h1 {
+    margin-bottom: 30px;
+}
+.w50 {
+    width: 70%;
+}
+.text1, .text0, .text2 {
+    margin-top: 50px;
+}
+.text1 > div {
+    width: 80% !important;
+    margin-left: 0 !important;
+    transform: none;
+}
+.text1 > div > div:first-child {
+    margin-left: -13% !important;
+}
+.text2 h2 {
+    margin-top: 10px;
+}
+.text1 h2 {
+    margin-top: 100px;
+}
+.text0 h1 {
+    margin-top: 100px;
+}
+.text2 img {
+    position: relative !important;
+    margin-top: 50px;
+}
+.toCenterBlock {
+    margin-top: 100px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 100px !important;
+}
+
+@media screen and (max-width: 798px) {
+    .text1, .text0, .text2 {
+        margin-top: 20px;
+    }
+    .text0 h1 {
+        margin-top: 0;
+    }
+    .text2 h2 {
+        margin-top: 56px;
+    }
+    .text1 > div {
+        width: 100% !important;
+        margin-left: 0 !important;
+        transform: none;
+    }
+    .text1 > div > div:first-child {
+        margin-left: 0% !important;
+    }
+}
+@media screen and (max-width: 498px) {
+    .text1, .text0, .text2 {
+        margin-top: 20px;
+    }
+    .text2 h2 {
+        margin-top: 56px;
+    }
+    .text0 h1 {
+        margin-top: 0;
+    }
+    .text1 > div {
+        width: 100% !important;
+        margin-left: 0 !important;
+        transform: none;
+    }
+    .text1 > div {
+        width: 100% !important;
+        margin-left: 0 !important;
+        transform: none;
+        margin-top: 28px !important;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+
+}

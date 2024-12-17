@@ -1,0 +1,136 @@
+.tarrifPage {
+    margin-top: 100px;
+}
+.tarrifsContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+}
+.tarrifsContainer .leftBlock {
+    position: relative;
+    width: clamp(250px, 30%, 400px);
+}
+.tarrifsContainer .leftBlock .upNav {
+    margin-bottom: 20px;
+}
+.tarrifsContainer .leftBlock .upNav button {
+    border-radius: 9px;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: clamp(12px, 1vw, 16px);
+    color: #fff;
+    width: 100%;
+}
+.tarrifsContainer .leftBlock .upNav button:not(:first-child) {
+    margin-top: 10px;
+}
+.tarrifsContainer .leftBlock .downForm form div div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+}
+.tarrifsContainer .leftBlock .downForm form div div input {
+    border-radius: 6px;
+    width: 89%;
+    margin: auto;
+    opacity: 0.5;
+}
+.tarrifsContainer .leftBlock .downForm form button {
+    border-radius: 9px;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: clamp(12px, 1vw, 16px);
+    color: #fff;
+    width: 80%;
+    margin: auto !important;
+}
+.tarrifsContainer .leftBlock .downForm form div div input:not(:first-child) {
+    margin-top: 10px;
+}
+.tarrifsContainer .rightBlock {
+    width: clamp(350px, 70%, 1000px);
+    margin-left: 40px;
+}
+.tarrifsContainer .rightBlock > *:not(a) {
+    margin-bottom: 20px;
+}
+.tarrifsContainer .rightBlock > h2, .tarrifsContainer .rightBlock > a {
+    text-transform: uppercase;
+    color: #292929;
+}
+.tarrifsContainer .rightBlock > a {
+    border-bottom: 2px solid #292929;
+}
+.tarrifsContainer .rightBlock > *:not(h2) {
+    margin-top: 20px;
+}
+.tarrifsContainer .rightBlock ul {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tarrifsContainer .rightBlock ul li {
+    display: flex;
+    align-items: center;
+
+}
+.tarrifsContainer .leftBlock label {
+    font-size: clamp(12px, 0.7vw, 16px);
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toCenterBlock {
+    margin-top: 100px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 100px !important;
+}
+
+@media screen and (max-width: 798px) {
+    .tarrifsContainer {
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+    }
+    .tarrifsContainer .leftBlock {
+        position: relative;
+        width: 100%;
+    }
+    .tarrifsContainer .rightBlock {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .tarrifsContainer .rightBlock ul {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .tarrifsContainer .leftBlock label {
+        font-size: clamp(16px, 3.7vw, 16px);
+        margin-top: 10px;
+        margin-bottom: 0;
+        width: 96%;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 498px) {
+
+}
+
+@media screen and (min-width: 1500px) {
+
+}
