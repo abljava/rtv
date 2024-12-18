@@ -47,13 +47,15 @@
     object-fit: cover;
     filter: brightness(70%);
 }
+
 .worksContainer {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 6%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
     min-height: max-content;
     margin-top: 100px;
 }
+
 .worksContainer, .worksContainer img {
     position: relative !important;
 }
@@ -65,9 +67,11 @@
     font-size: clamp(16px, 1vw, 20px) !important;
     width: 100%;
 }
-.workBlock p:last-child {
+
+/* .workBlock p:last-child {
     margin-top: 20px;
-}
+} */
+
 .workBlock img {
     width: 100% !important;
     height: clamp(150px, 60%, 450px) !important;

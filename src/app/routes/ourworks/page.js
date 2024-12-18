@@ -21,6 +21,7 @@ export default function Page({ params }) {
   const { lang, moduleWindow } = useMain();
 
   const { isLoading, error, data } = useGetOurWorksQuery(lang);
+  console.log(data)
 
   useEffect(() => {}, [data]);
 
@@ -33,6 +34,7 @@ export default function Page({ params }) {
           {!isLoading && !error ? (
             data && Array.isArray(data.data) ? (
               data.data.map((item, index) => {
+                console.log(item.attributes?.title)
                 if (index < 5)
                   return (
                     <Link href={`/routes/ourworks/${item.id}`} key={item.id}>
@@ -42,7 +44,7 @@ export default function Page({ params }) {
                         <Image
                           unoptimized
                           src={`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_URL_API}${item.attributes.image.data.attributes.url}`}
-                          alt={item.attributes.title}
+                          alt={item.attributes?.title}
                           fill
                         />
                         <p>{item.attributes.createdAt.split('T')[0]}</p>
@@ -64,7 +66,7 @@ export default function Page({ params }) {
           <Forms type={'main'} />
         </div>
 
-        <section
+        {/* <section
           className={`${styles.newsContainer} ${localstyles.worksContainer} ${localstyles.worksContainer}`}
         >
           {!isLoading && !error ? (
@@ -95,7 +97,7 @@ export default function Page({ params }) {
           ) : (
             <Loader />
           )}
-        </section>
+        </section> */}
       </main>
       {moduleWindow ? <ModuleWindow /> : null}
     </>
