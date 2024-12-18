@@ -28,6 +28,7 @@ export const Slider = ({title = '', image = ''}) => {
   const {lang, mobile} = useMain()
 
   const {isLoading, error, data} = useGetSlidersQuery(lang)
+  console.log(data)
 
   const nextSlide = () => {
     if(!data) return false

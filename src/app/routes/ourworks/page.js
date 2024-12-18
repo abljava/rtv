@@ -21,7 +21,6 @@ export default function Page({ params }) {
   const { lang, moduleWindow } = useMain();
 
   const { isLoading, error, data } = useGetOurWorksQuery(lang);
-  console.log(typeof data)
 
   useEffect(() => {}, [data]);
 

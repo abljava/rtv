@@ -6,7 +6,22 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     images: {
-        domains: ['95.163.229.107','localhost', '127.0.0.1', 'realtransvostok.ru', 'realtransvostok.ru:1338','realtransvostok.ru:1337'], // замените это значение на ваш домен или IP-адрес изображений
+        domains: [
+            '95.163.229.107',
+            'localhost', '127.0.0.1',
+            'realtransvostok.ru',
+            'realtransvostok.ru:1338',
+            'realtransvostok.ru:1337'
+        ], // замените это значение на ваш домен или IP-адрес изображений
+        remotePatterns: [
+            {
+                protocol: "http",
+                hostname: "localhost",
+                port: "1337",
+                pathname: "/uploads/**/*",
+            },
+        ],
+
     },
     async headers() {
         return [
