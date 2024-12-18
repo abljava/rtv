@@ -21,7 +21,7 @@ export default function Page({ params }) {
   const { lang, moduleWindow } = useMain();
 
   const { isLoading, error, data } = useGetOurWorksQuery(lang);
-  console.log(data)
+  console.log(typeof data)
 
   useEffect(() => {}, [data]);
 
@@ -34,8 +34,7 @@ export default function Page({ params }) {
           {!isLoading && !error ? (
             data && Array.isArray(data.data) ? (
               data.data.map((item, index) => {
-                console.log(item.attributes?.title)
-                if (index < 5)
+                if (index < 6)
                   return (
                     <Link href={`/routes/ourworks/${item.id}`} key={item.id}>
                       <div

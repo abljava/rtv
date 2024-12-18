@@ -1,49 +1,63 @@
 .text0 h1 {
     margin-bottom: 30px;
 }
-.clientPage > *:first-child {
+
+.clientPage>*:first-child {
     margin-top: 80px !important;
 }
+
 .w50 {
     width: 70%;
 }
-.text1, .text0, .text2 {
+
+.text1,
+.text0,
+.text2 {
     margin-top: 50px;
 }
-.text1 > div {
+
+.text1>div {
     width: 80% !important;
     margin-left: 0 !important;
     transform: none;
 }
-.text1 > div > div:first-child {
+
+.text1>div>div:first-child {
     margin-left: -13% !important;
 }
-.text2 h2 {
-}
+
+.text2 h2 {}
+
 .mt150 {
     margin-top: 150px;
 }
+
 .text2 p {
     width: 70%;
     margin-top: 15px;
 }
+
 .text1 h2 {
     margin-top: 110px;
 }
+
 .text0 h1 {
     margin-top: 100px;
 }
-.openWorkContainer > *:first-child {
+
+.openWorkContainer>*:first-child {
     margin-top: 60px;
     overflow: hidden;
     border-radius: 6px;
     height: 43vw;
     max-height: 650px;
 }
-.openWorkContainer > *:first-child form {
+
+.openWorkContainer>*:first-child form {
     display: none;
 }
-.openWorkContainer > *:first-child img {
+
+.openWorkContainer>*:first-child img {
     object-fit: cover;
     filter: brightness(70%);
 }
@@ -56,12 +70,15 @@
     margin-top: 100px;
 }
 
-.worksContainer, .worksContainer img {
+.worksContainer,
+.worksContainer img {
     position: relative !important;
 }
+
 .workBlock * {
     color: #292929;
 }
+
 .workBlock h2 {
     height: 40px;
     font-size: clamp(16px, 1vw, 20px) !important;
@@ -79,17 +96,20 @@
     overflow: hidden;
     border-radius: 6px;
 }
+
 .proxyImage {
     position: relative;
     width: clamp(150px, 10vw, 250px);
     padding: 10px;
     display: flex;
 }
+
 .proxyImage img {
     position: relative !important;
     flex: auto;
     object-fit: contain !important;
 }
+
 .scrollData {
     display: flex;
     flex-direction: row;
@@ -102,13 +122,16 @@
     overflow-y: hidden;
     scrollbar-width: thin;
 }
-.scrollData > *:not(:first-child) {
+
+.scrollData>*:not(:first-child) {
     margin-left: 20px;
 }
+
 .text2 img {
     position: relative !important;
     margin-top: 50px;
 }
+
 .toCenterBlock {
     margin-top: 160px !important;
     width: 100% !important;
@@ -126,13 +149,15 @@
         min-height: max-content;
         margin-top: 20px;
     }
-    .openWorkContainer > *:first-child {
+
+    .openWorkContainer>*:first-child {
         margin-top: 20px;
         overflow: hidden;
         border-radius: 6px;
         height: 43vw;
         max-height: 650px;
     }
+
     .toCenterBlock {
         margin-top: 20px !important;
         width: 100% !important;
@@ -141,6 +166,7 @@
         margin-bottom: 100px !important;
     }
 }
+
 @media screen and (max-width: 498px) {
     .worksContainer {
         display: grid;
@@ -152,6 +178,4 @@
     }
 }
 
-@media screen and (min-width: 1500px) {
-
-}
+@media screen and (min-width: 1500px) {}

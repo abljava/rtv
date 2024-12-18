@@ -22,9 +22,12 @@ export default function Page({params}) {
     const {lang, moduleWindow, mobile} = useMain();
 
     const {isLoading, error, data} = useGetAboutQuery(lang);
+    // console.log(data.data.attributes.mapImage.data.attributes.formats.thumbnail.url)
+    // console.log(`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${data.data.attributes?.mapImage.data.attributes.url}`)
+    
+
 
     useEffect(() => {
-        console.log(moduleWindow)
     },[data,moduleWindow])
 
     return (
@@ -55,7 +58,8 @@ export default function Page({params}) {
 
                                     <div className = {`${localstyles.w100} ${localstyles.text2}`}>
                                         <h2>{data.data.attributes?.title2}</h2>
-                                        <div><Image src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${data.data.attributes?.mapImage.data.attributes.url}`} alt = {''} fill /></div>
+                                        {/* <div><Image src = 'http://localhost:1337/api/uploads/thumbnail_map_ce0ac2a1e5.png' alt = {''} fill /></div> */}
+                                        <div><img src = {`${process.env.NEXT_PUBLIC_CONNECT}://${process.env.NEXT_PUBLIC_HOST_API}${data.data.attributes?.mapImage.data.attributes.url}`} alt = {''} fill /></div>
                                     </div>
 
                                     <div className={localstyles.toCenterBlock}>
