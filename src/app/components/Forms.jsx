@@ -303,7 +303,7 @@ export const Forms = ({header = '', job = '', type = 'main'}) => {
                             <div className = {`${styles.mainContainer} ${styles.tarrifsForm}`}>
                                 <div className = {styles.cityesContainer}>
                                     <label htmlFor = "name">{youNameLang[lang]}</label>
-                                    <input type = "text" name = "name" placeholder = {telLang[lang]} />
+                                    <input type = "text" name = "name" placeholder = {youNameLang[lang]} />
                                     <label htmlFor = "tel">{telLang[lang]}</label>
                                     <input type = "tel" name = "tel" placeholder = {telLang[lang]} />
                                     <label htmlFor = "cityFrom">{cityFromLang[lang]}</label>
