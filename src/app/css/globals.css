@@ -95,6 +95,7 @@ button, input {
 }
 nav * {
     text-transform: uppercase;
+    color: #292929;
 }
 button:hover {
     scale: 1.1;

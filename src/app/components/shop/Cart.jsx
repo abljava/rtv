@@ -34,7 +34,6 @@ export const Cart = ({}) => {
     },[])
 
     useEffect(() => {
-        console.log(data)
     },[data.length])
 
     useEffect( () => {},[data,scroll])

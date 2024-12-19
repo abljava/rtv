@@ -52,7 +52,7 @@ export const SearchForm = ({}) => {
         },100)
     }
 
-    useEffect(() => {console.log(results)},[results])
+    useEffect(() => {},[results])
 
     return(
         <section className = {`${styles.searchContainer}`}>

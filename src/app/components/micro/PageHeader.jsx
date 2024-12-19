@@ -9,7 +9,6 @@ import mainStyles from '@/app/css/main.module.css'
  */
 const PageHeader = ({header = '' , styles = {} , src = '', publicPath = false}) => {
     if(!publicPath) {
-        console.log("БЭК")
         return(
             <section style = {{
                 backgroundColor: 'rgba(0,0,0,0)',

@@ -22,7 +22,7 @@ const Office =  ({data = {}, selectType = 0}) => {
 
     const [selectedOffice, setSelectedOffice] = useState(0)
 
-    useEffect(() => {console.log(data)}, [selectType])
+    useEffect(() => {}, [selectType])
 
     const filiasLang = {
         ru: 'Филиал',

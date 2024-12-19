@@ -16,7 +16,6 @@ export const Partners = ({}) => {
 
     const {isLoading, error, data} = useGetPartnersQuery();
     useEffect(() => {
-        console.log(data)
     })
     return(
         <section className = {`${styles.partnersContainer}`}>

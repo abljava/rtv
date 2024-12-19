@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-const HOST = 'https://37.140.195.129:1338'
+const HOST = "https://37.140.195.129:1338";
 
 //const JWT = process.env.NEXT_PUBLIC_JWT
 
-import {createSlice, current} from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 /*
 async function initCategories(state,action) {
     let result;
@@ -19,8 +19,6 @@ async function initCategories(state,action) {
         const arrayData = await json.data;
               arrayData.forEach( (item, index) => {
 
-              //console.log(item)
-
               const resultObject = {
                     id: item.id,
                     name: item.attributes.name,
@@ -33,7 +31,6 @@ async function initCategories(state,action) {
               }
             state.push(resultObject)
         })
-        console.log(current(state))
 }
 */
 
@@ -129,14 +126,10 @@ async function initCategories(state,action) {
 const initialState = [];
 
 const categorySlice = createSlice({
-    name: 'category',
-    initialState,
-    reducers: {
+  name: "category",
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {},
+});
 
-    },
-    extraReducers: builder => {
-
-    }
-})
-
-export const {actions, reducer} = categorySlice;
+export const { actions, reducer } = categorySlice;
