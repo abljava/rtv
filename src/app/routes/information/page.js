@@ -132,11 +132,10 @@ const Requisites = ({ lang = "ru" }) => {
       {!isLoading ? (
         data && typeof data.data != "undefined" && Array.isArray(data.data) ? (
           data.data.map((item) => {
-            console.log(item);
             return (
-              <div>
+              <>
                 <p>{item.attributes.title}</p> <p>{item.attributes.text}</p>
-              </div>
+              </>
             );
           })
         ) : null
